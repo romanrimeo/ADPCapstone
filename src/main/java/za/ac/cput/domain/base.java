@@ -1,6 +1,8 @@
 package za.ac.cput.domain;
+
 import java.util.Objects;
-public class baseclass
+
+public class base
 {
     private Long id;
 
@@ -16,10 +18,10 @@ public class baseclass
 
     public static class Builder
     {
-        private final baseclass base;
+        private final base base;
         public Builder()
         {
-            base = new baseclass();
+            base = new base();
         }
 
         public Builder id(Long id)
@@ -28,7 +30,7 @@ public class baseclass
             return this;
         }
 
-        public baseclass build()
+        public base build()
         {
             return base;
         }
@@ -40,7 +42,7 @@ public class baseclass
     {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        baseclass that = (baseclass) o;
+        base that = (base) o;
         return Objects.equals(id, that.id);
     }
 
@@ -50,3 +52,4 @@ public class baseclass
         return Objects.hash(id);
     }
 }
+
