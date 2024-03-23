@@ -1,3 +1,10 @@
+/*
+RoomType.java
+RoomType domain class
+Author: Moegamat Zaihd Behardien (219233829)
+Date: 23 March 2024
+*/
+
 package za.ac.cput.domain;
 
 import java.util.Objects;

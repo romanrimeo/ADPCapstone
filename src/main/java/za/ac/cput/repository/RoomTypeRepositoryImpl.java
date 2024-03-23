@@ -1,3 +1,9 @@
+/*
+GuestRepositoryTest.java
+GuestRepositoryTest class
+Author: Moegamat Zaihd Behardien (219233829)
+Date: 23 March 2024
+*/
 package za.ac.cput.repository;
 import za.ac.cput.domain.RoomType;
 import za.ac.cput.repository.RoomTypeRepository;
@@ -10,7 +16,8 @@ public class RoomTypeRepositoryImpl implements RoomTypeRepository
     private Long idCounter = 1L;
 
     @Override
-    public RoomType create(RoomType roomType) {
+    public RoomType create(RoomType roomType)
+    {
         if (roomType.getId() == null) {
             roomType.setId(idCounter++);
         }
@@ -24,8 +31,10 @@ public class RoomTypeRepositoryImpl implements RoomTypeRepository
     }
 
     @Override
-    public RoomType update(RoomType roomType) {
-        if (roomTypeMap.containsKey(roomType.getId())) {
+    public RoomType update(RoomType roomType)
+    {
+        if (roomTypeMap.containsKey(roomType.getId()))
+        {
             roomTypeMap.put(roomType.getId(), roomType);
             return roomType;
         } else {
@@ -34,7 +43,9 @@ public class RoomTypeRepositoryImpl implements RoomTypeRepository
     }
 
     @Override
-    public void delete(RoomType roomType) {
+    public void delete(RoomType roomType)
+    {
         roomTypeMap.remove(roomType.getId());
     }
+
 }
