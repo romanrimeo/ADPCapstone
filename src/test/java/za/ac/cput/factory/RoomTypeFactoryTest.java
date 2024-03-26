@@ -13,7 +13,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RoomTypeFactoryTest
 {
     @Test
-    void buildRoomType() {
+    void buildRoomType()
+    {
         RoomType rt = RoomTypeFactory.createRoomType(1021513L, "Eric", 6.2);
         RoomType rt2 = rt;
 

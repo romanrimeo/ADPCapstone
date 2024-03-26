@@ -39,6 +39,16 @@ public class RoomType
         this.price = price;
     }
 
+    @Override
+    public String toString()
+    {
+        return "RoomType{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     public static class Builder
     {
         private final RoomType base;
@@ -74,5 +84,6 @@ public class RoomType
     {
         return Objects.hash(id);
     }
+
 }
 
