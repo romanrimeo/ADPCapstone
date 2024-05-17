@@ -8,9 +8,11 @@ Date: 23 March 2024
 package za.ac.cput.domain;
 
 import java.util.Objects;
-
+@Entity
 public class RoomType
 {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private double price;
